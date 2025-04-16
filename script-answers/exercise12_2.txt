@@ -1,0 +1,16 @@
+lScript started on Tue Apr  1 10:07:05 2025
+Restored session: Tue Apr  1 10:01:46 EEST 2025
+[1m[7m%[27m[1m[0m                                                                                                           ]7;file://Hallikainen's-MacBook/Users/vapaaeero/Documents/opinnot/kurssit/fullstack/containers/part12-containers-applications/script-answers[0m[27m[24m[J(base) vapaaeero@Hallikainen's-MacBook script-answers % [K[?2004hexitecho "hello"[12Dll          [10Dcd frontend[11Dll         [9Dcd project-work[15Dll             [13Dcd Documents/opinnot/kurssit/fullstack/[39Dnpm start                              [30D[9Dcd Documents/opinnot/kurssit/fullstack/[39Dll                                     [37Dcd project-work[15Dll             [13Dcd frontend[11Dll         [9Decho "hello"[12Dexit        [8D    [7mdocker run -it ubuntu bash[27m[26D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?2004l
+[?2004h]0;root@7aaef5753904: /root@7aaef5753904:/# cd usr/src/
+[?2004l[?2004h]0;root@7aaef5753904: /usr/srcroot@7aaef5753904:/usr/src# mkdir app
+[?2004l[?2004h]0;root@7aaef5753904: /usr/srcroot@7aaef5753904:/usr/src# cd app/
+[?2004l[?2004h]0;root@7aaef5753904: /usr/src/approot@7aaef5753904:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@7aaef5753904: /usr/src/approot@7aaef5753904:/usr/src/app# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                           ]7;file://Hallikainen's-MacBook/Users/vapaaeero/Documents/opinnot/kurssit/fullstack/containers/part12-containers-applications/script-answers[0m[27m[24m[J(base) vapaaeero@Hallikainen's-MacBook script-answers % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Tue Apr  1 10:08:19 2025
