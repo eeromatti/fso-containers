@@ -1,0 +1,16 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: notes-backend
+    container_name: notes-backend
+    ports:
+      - 3000:3000
+    environment:
+      - MONGO_URL=mongodb+srv://eki:kannaa@mangodb.ml2nd.mongodb.net/Notes?retryWrites=true&w=majority&appName=MangoDB
+    networks:
+      - backend
+
+networks:
+  backend:

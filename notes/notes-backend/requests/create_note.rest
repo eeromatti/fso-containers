@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVraSIsImlkIjoiNjcxZjdlYWNjMmZlZTQ0ODdjYTZmZTYzIiwiaWF0IjoxNzMwMzc1NTM3fQ.DR6UmRjCTeJtmZgserpA3oQWY12DtXDWE4qwh4wYhMg
+
+{
+  "content": "perse",
+  "important": false
+}

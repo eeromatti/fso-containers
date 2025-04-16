@@ -1,0 +1,42 @@
+
+services:
+  server:
+    build:
+      context: ./notes-backend
+      dockerfile: dev.Dockerfile
+    container_name: notes-backend-dev
+    volumes:
+      - ./notes-backend:/usr/src/app
+    environment:
+      - MONGO_URL=mongodb+srv://eki:kannaa@mangodb.ml2nd.mongodb.net/Notes?retryWrites=true&w=majority&appName=MangoDB
+    networks:
+      - dev
+
+  app:
+    image: notes-frontend-dev
+    build:
+      context: ./notes-frontend
+      dockerfile: dev.Dockerfile
+    container_name: notes-frontend-dev
+    volumes:
+      - ./notes-frontend:/usr/src/app
+    ports:
+      - 5173:5173
+    networks:
+      - dev
+
+  proxy:
+    image: nginx:1.21-alpine
+    container_name: reverse-proxy
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app
+      - server 
+    networks:
+      - dev
+
+networks:
+  dev:

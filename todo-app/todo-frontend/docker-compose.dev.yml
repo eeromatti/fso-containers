@@ -1,0 +1,17 @@
+services:
+  app:
+    image: todo-frontend-dev
+    build:
+      context: . 
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 5173:5173
+    container_name: todo-frontend-dev
+    hostname: todo-frontend-dev 
+  debug-helper:
+    image: busybox
+
+networks:
+  app-network:
